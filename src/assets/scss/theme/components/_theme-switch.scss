@@ -1,0 +1,55 @@
+// Theme Switch dark/light mode
+[data-theme=light]{
+.theme-switch{
+    .form-check-input {
+        height: 36px;
+        width: 20px;
+           background-image:url(../images/svg/sun.svg);
+           background-color: transparent;
+           border: none;
+           cursor: pointer;
+           margin: 0;
+       
+       &:checked {
+           background-position: right center;
+           background-color: transparent;
+           background-image:url(../images/svg/sun.svg) !important;
+   
+       }
+       &:focus{
+           background-image:url(../images/svg/sun.svg);
+           box-shadow: none;
+           
+       }
+   }
+   }
+
+}
+
+
+[data-theme=dark]{
+    .theme-switch{
+        .form-check-input {
+            height: 36px;
+            width: 20px;
+               background-image:url(../images/svg/moon.svg);
+               background-color: transparent;
+               border: none;
+               cursor: pointer;
+               margin: 0;
+           
+           &:checked {
+               background-position: right center;
+               background-color: transparent;
+               background-image:url(../images/svg/moon.svg) !important;
+       
+           }
+           &:focus{
+               background-image:url(../images/svg/moon.svg);
+               box-shadow: none;
+               
+           }
+       }
+       }
+    
+    }
